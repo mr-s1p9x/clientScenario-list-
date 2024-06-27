@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dynamic List</title>
+<style>
+    ul { list-style-type: disc; }
+    ul ul { list-style-type: circle; }
+    ul ul ul { list-style-type: square; }
+    #listContainer { margin-top: 20px; }
+</style>
+</head>
+<body>
+<h2>Dynamic List</h2>
+<div>
+    <input type="radio" name="action" value="add" id="add" checked>Add item to the end<br>
+    <input type="radio" name="action" value="insert" id="insert">Insert item<br>
+    <input type="radio" name="action" value="edit" id="edit">Edit item<br>
+    <input type="radio" name="action" value="addSublist" id="addSublist">Add sublist<br>
+    <input type="radio" name="action" value="delete" id="delete">Delete item<br>
+    <input type="text" id="itemText" placeholder="Enter text">
+    <button onclick="addItem()">Add New List</button>
+</div>
+<div id="listContainer"></div>
+<script src="script.js"></script>
+</body>
+</html>
